@@ -1,19 +1,21 @@
-# include "main.h"
+#include "main.h"
+
 /**
- * main - Function that prints __putchar to the screen
- * Return: 0 always a success
+ * main - Entry Point
+ * _putchar- writes the character c to stdout
+ * Prgram should print c
+ *
+ * Return:0
  */
 int main(void)
 {
-        char message[] = "_putchar";
-        int count = 0;
+        char p[] = "_putchar";
+        int x;
 
-        while (message[count] != '\0')
+        for (x = 0; x < 8; x++)
         {
-                _putchar(message[count]);
-                count++;
+                _putchar(p[1]);
         }
         _putchar('\n');
         return (0);
-
 }
